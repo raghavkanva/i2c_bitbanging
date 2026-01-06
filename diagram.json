@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": -9, "left": -3.6, "attrs": {} },
+    { "type": "wokwi-logic-analyzer", "id": "logic1", "top": 230.75, "left": 163.2, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 42.35,
+      "left": 393.6,
+      "attrs": { "value": "4700" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 32.75,
+      "left": 393.6,
+      "attrs": { "value": "4700" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -3.2,
+      "left": 476,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": 215.4, "left": 585.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "logic1:D0", "mega:36", "green", [ "h-57.6", "v-28.8", "h307.2", "v-134.4" ] ],
+    [ "logic1:GND", "mega:GND.2", "black", [ "h-86.4", "v-124.8", "h96" ] ],
+    [ "r1:2", "mega:5V", "green", [ "v182.4", "h-10.8" ] ],
+    [ "r2:2", "mega:5V", "green", [ "v182.4", "h-289.2" ] ],
+    [ "r2:1", "mega:36", "green", [ "v19.2", "h-9.6" ] ],
+    [ "r1:1", "mega:37", "green", [ "v19.2", "h-9.6", "v19.2" ] ],
+    [ "mega:37", "logic1:D1", "green", [ "v10.9", "h64.6", "v144", "h-288", "v19.2" ] ],
+    [ "lcd1:GND", "mega:GND.2", "black", [ "h9.6", "v345.6", "h-345.6", "v-182.4" ] ],
+    [ "lcd1:VCC", "mega:5V", "red", [ "h0", "v336.1", "h-355.2", "v-192" ] ],
+    [ "lcd1:SDA", "mega:37", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "mega:36", "green", [ "h0" ] ],
+    [ "rtc1:SCL", "mega:36", "green", [ "h-192", "v-192.2", "h-19.2" ] ],
+    [ "rtc1:SDA", "mega:37", "green", [ "h-153.6", "v-173.1", "h-9.6" ] ],
+    [ "rtc1:GND", "mega:GND.2", "black", [ "h-220.8", "v-48" ] ],
+    [ "rtc1:5V", "mega:5V", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
