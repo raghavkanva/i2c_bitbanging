@@ -132,3 +132,7 @@ LinkedIn: https://www.linkedin.com/in/raghavkanva/
 ## License
 This project is open for educational and evaluation purposes.
 
+---
+
+## Wokwi Platform Simulation Link : https://wokwi.com/projects/452322317378494465
+ 
