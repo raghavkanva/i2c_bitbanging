@@ -4,7 +4,7 @@
 ## Overview
 This project presents a **software-implemented (bit-banged) I2C communication stack** developed in **Embedded C** for the Arduino Mega platform. The system interfaces with a **DS1307 Real-Time Clock (RTC)** and displays real-time data on a **16x2 LCD** via a **PCF8574 I/O expander**, without using Arduino’s hardware I2C (`Wire`) library.
 
-The work is designed with a **product-oriented and research-driven mindset**, focusing on **protocol-level understanding, portability, and deterministic timing control**—key requirements in real-world embedded systems and hardware-focused startups such as **Neonflake**.
+The work is designed with a **product-oriented and research-driven mindset**, focusing on **protocol-level understanding, portability, and deterministic timing control**—key requirements in real-world embedded systems and hardware-focused startups.
 
 ---
 
